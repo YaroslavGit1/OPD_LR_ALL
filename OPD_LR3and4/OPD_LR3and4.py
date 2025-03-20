@@ -10,13 +10,6 @@ exchange_rates = {
 }
 
 def convert_currency(amount, from_currency, to_currency):
-    """
-    Функция для конвертации валюты.
-    :param amount: сумма в исходной валюте
-    :param from_currency: код исходной валюты (например, 'USD', 'RUB')
-    :param to_currency: код целевой валюты (например, 'RUB', 'USD')
-    :return: сконвертированное значение в целевой валюте
-    """
     if from_currency not in exchange_rates:
         raise ValueError(f"Валюта {from_currency} не поддерживается")
 

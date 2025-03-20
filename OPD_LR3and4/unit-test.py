@@ -8,7 +8,7 @@ class TestCurrencyConverter(unittest.TestCase):
         result = convert_currency(100, 'USD', 'RUB')
         self.assertAlmostEqual(result, 9000, places=2)
 
-    def test_eur_to_usd(self):
+    def test_rub_to_usd(self):
         """Проверка конвертации из RUB в USD."""
         result = convert_currency(100, 'RUB', 'USD')
         self.assertAlmostEqual(result, 1.11, places=2)

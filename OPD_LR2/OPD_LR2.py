@@ -21,9 +21,6 @@ faq_dict = {
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message):
-    """
-    Команда /start — Приветствие и краткая инструкция.
-    """
     welcome_text = (
         "Привет, первокурсник!\n"
         "Я бот, который поможет тебе с основными вопросами по университету.\n\n"
